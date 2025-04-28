@@ -1,0 +1,83 @@
+# This is a Spack Environment file.
+#
+# It describes a set of packages to be installed, along with
+# configuration settings.
+spack:
+  # add package specs to the `specs` list
+  packages:
+    aluminum:
+      buildable: false
+    ascent:
+      buildable: false
+    axom:
+      buildable: false
+    blt:
+      buildable: false
+    caliper:
+      buildable: false
+    care:
+      buildable: false
+    conduit:
+      buildable: false
+    dihydrogen:
+      buildable: false
+    flux-core:
+      buildable: false
+    flux-sched:
+      buildable: false
+    flux-security:
+      buildable: false
+    glvis:
+      buildable: false
+    hiptt:
+      buildable: false
+    hydrogen:
+      buildable: false
+    lbann:
+      buildable: false
+    lvarray:
+      buildable: false
+    mfem:
+      buildable: false
+    py-hatchet:
+      buildable: false
+    py-maestrowf:
+      buildable: false
+    py-merlin:
+      buildable: false
+    py-shroud:
+      buildable: false
+    raja:
+      buildable: false
+    raja-perf+mpi:
+      buildable: false
+    samrai:
+      buildable: false
+    scr:
+      buildable: false
+    sundials:
+      buildable: false
+    umpire:
+      buildable: false
+    visit:
+      buildable: false
+    xbraid:
+      buildable: false
+    zfp:
+      buildable: false
+    all:
+      conflict: ["^mpich"]
+  config:
+    "misc_cache:": ../../../cache
+    "concretization_cache:":
+      enable: false
+  specs: []
+  view: true
+  concretizer:
+    unify: true
+    splice:
+      automatic: true
+  repos:
+  - ../../repos/mpi_abi_many_mocks_10
+  mirrors:
+    radiuss-cache: ../../radiuss-mirror/cache

@@ -1,0 +1,39 @@
+spack:
+  specs: [
+      "aluminum",
+      "ascent",
+      "axom",
+      "blt",
+      "caliper",
+      "care",
+      "chai+mpi",
+      "conduit",
+      "dihydrogen",
+      "flux-core",
+      "flux-sched",
+      "flux-security",
+      "glvis",
+      "hiptt",
+      "hydrogen",
+      "hypre",
+      "lbann",
+      "lvarray+chai",
+      "mfem",
+      "py-hatchet",
+      "py-maestrowf",
+      "py-merlin",
+      "py-shroud",
+      "raja",
+      "raja-perf+mpi",
+      "samrai",
+      "scr",
+      "sundials+mpi",
+      "umpire+mpi",
+      "visit+mpi",
+      "xbraid",
+      "zfp",
+      "mpich@3.4.3"
+  ]
+  view: true
+  concretizer:
+    unify: true
