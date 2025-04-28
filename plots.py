@@ -1,9 +1,8 @@
-from src.viz.libplot import plot_grouped_boxes, plot_stacked_lines
-from src.boa.config import ENCODING_EXP_OUTPUT_DIR, SCALING_EXP_OUTPUT_DIR, SPLICING_EXP_OUTPUT_DIR
-from src.proc.clean_outputs import proc_all_outputs
+from libplot import plot_grouped_boxes, plot_stacked_lines
+from config import ENCODING_EXP_OUTPUT_DIR, SCALING_EXP_OUTPUT_DIR, SPLICING_EXP_OUTPUT_DIR
+from clean_outputs import proc_all_outputs
 import numpy as np
 import matplotlib as mpl
-mpl.use("pgf")
 import matplotlib.pyplot as plt
 from pathlib import Path
 
@@ -76,8 +75,8 @@ def scaling_line_plot(figpath: Path):
     fig.savefig(str(figpath))
 
 if __name__ == "__main__":
-    fig_root = Path("/home/jgouwar/git/papers/spack-splice-sc25/figures")
-    encoding_total_plot(fig_root / "encoding.pgf")
-    splicing_total_plot(fig_root / "splicing.pgf")
-    scaling_line_plot(fig_root / "scaling.pgf")
+    fig_root = Path("figures")
+    encoding_total_plot(fig_root / "encoding.png")
+    splicing_total_plot(fig_root / "splicing.png")
+    scaling_line_plot(fig_root / "scaling.png")
     
