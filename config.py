@@ -22,7 +22,6 @@ ENCODING_EXP_OUTPUT_DIR = OUTPUT_DIR / "encoding"
 SPLICING_EXP_OUTPUT_DIR = OUTPUT_DIR / "splicing"
 SCALING_EXP_OUTPUT_DIR = OUTPUT_DIR / "scaling"
 CACHE_CONFIGS = ["local", "remote"]
-NRUNS = 30
 # $ spack list -t RADIUSS | sed 's/.*/"&",/' | cat
 RADIUSS_SPECS = [
     "aluminum",
@@ -81,8 +80,6 @@ MPI_RADIUSS_SPECS = [
     "visit+mpi",
     "xbraid",
 ]
-SELECT_ENCODING_SPECS = ["caliper", "lbann", "mfem", "joint"]
-SELECT_SPECS = ["joint", "caliper", "mfem+mpi", "lbann"]
 
 def read_jsonl_stream(file: Path):
     with open(file, "r") as f:

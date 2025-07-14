@@ -30,3 +30,6 @@ experiments `NPROCS` and `NRUNS`
 experiments. In general, this has a negative linear correlation with runtime.
 - `NRUNS`: This controls the number of times an experiment is ran for timing
 stability.  In general, this has a positive linear correlation with the runtime. 
+
+The original experiments from the paper were run on a 96 core machine with 
+`NPROCS=72` and `NRUNS=30`. This took approximately 5 hours. 
